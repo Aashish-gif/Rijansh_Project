@@ -145,12 +145,14 @@ const UserTickets = () => {
               </div>
 
               <div className="ticket-footer">
+                {/* Updated: "View Ticket" button instead of "View Event" */}
                 <button
-                  className="view-event-btn"
-                  onClick={() => navigate(`/eventDetail/${ticket.eventId}`)}
+                  className="view-ticket-btn"
+                  onClick={() => navigate(`/ticketDetail/${ticket._id}`)}
                 >
-                  View Event
+                  View Ticket
                 </button>
+
                 <button
                   className="rt-resell-action-btn"
                   onClick={() => handleResellClick(ticket._id)}
